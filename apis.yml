@@ -1,23 +1,102 @@
 aid: intelsat
+
 name: Intelsat
-description: 'Intelsat is a company surfaced via the API Evangelist harvest backlog (source: space) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.ses.com/social-share-default.jpg
+
+description: Intelsat, now part of SES, is a leading satellite operator providing global communications services. It offers a portfolio of satellite
+  capacity, managed services, and connectivity solutions across aviation, government, enterprise, and media sectors. The company leverages a fleet
+  of geostationary and medium Earth orbit satellites to deliver reliable, high‑throughput connectivity worldwide, supporting critical applications
+  such as broadband internet, broadcast, and IoT.
+
 url: https://raw.githubusercontent.com/api-evangelist/intelsat/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:space
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
-- Company
-apis: []
+- Satellite
+- Communications
+- Connectivity
+- Enterprise
+- Media
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/intelsat-rules.yml
+- type: JSONLD
+  url: json-ld/intelsat-context.jsonld
+- type: Vocabulary
+  url: vocabulary/intelsat-vocabulary.yml
+- type: DataModel
+  url: data-model/intelsat-data-model.yml
+- type: Conformance
+  url: conformance/intelsat-conformance.yml
+- type: Hosts
+  url: hosts/intelsat-hosts.yml
+- type: Vendors
+  url: vendors/intelsat-vendors.yml
+- type: TermsOfService
+  url: https://www.ses.com/terms-of-use
+- type: Security
+  url: https://www.ses.com/network-and-technology/technology-enablers/security
+- type: PrivacyPolicy
+  url: https://www.ses.com/privacy-policy
+- type: Newsroom
+  url: https://www.ses.com/news
+- type: Documentation
+  url: https://developer.intelsat.com/
+- type: DomainSecurity
+  url: security/intelsat-domain-security.yml
 - type: Website
   url: https://intelsat.com/
+
+apis:
+- name: Intelsat API
+  description: API details listed on the Intelsat Developer Portal
+  humanURL: https://developer.intelsat.com/
+  baseURL: null
+  aid: intelsat:intelsat-api-2
+- aid: intelsat:intelsat-api
+  name: Intelsat API
+  description: 'Intelsat API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-09-22); not
+
+    the provider''s own document.'
+  humanURL: https://developer.intelsat.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/intelsat-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/intelsat-get-api-alarms-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal pages are rendered via JavaScript and return no machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://developer.intelsat.com/openapi.json
+    status: 404
+  checked: 2026-09-22
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

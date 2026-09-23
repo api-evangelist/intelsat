@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "@vocab": "https://intelsat.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "intelsat": "https://intelsat.com/schema#",
+    "GetApiAlarmsResponse": "intelsat:GetApiAlarmsResponse",
+    "data": {
+      "@id": "intelsat:data"
+    },
+    "data.terminal_name": {
+      "@id": "intelsat:data.terminal_name",
+      "@type": "xsd:string"
+    },
+    "data.object_id": {
+      "@id": "intelsat:data.object_id",
+      "@type": "xsd:string"
+    },
+    "data.object_type": {
+      "@id": "intelsat:data.object_type",
+      "@type": "xsd:string"
+    },
+    "data.condition_type": {
+      "@id": "intelsat:data.condition_type",
+      "@type": "xsd:string"
+    },
+    "data.severity": {
+      "@id": "intelsat:data.severity",
+      "@type": "xsd:string"
+    },
+    "data.start_time": {
+      "@id": "intelsat:data.start_time",
+      "@type": "xsd:string"
+    },
+    "data.end_time": {
+      "@id": "intelsat:data.end_time",
+      "@type": "xsd:string"
+    },
+    "data.description": {
+      "@id": "intelsat:data.description",
+      "@type": "xsd:string"
+    },
+    "data.state": {
+      "@id": "intelsat:data.state",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Intelsat API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Intelsat's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-09-22) from openapi/_ae-authored/intelsat-openapi-generated.yml.",
+  "dcterms:created": "2026-09-22",
+  "dcterms:source": [
+    "openapi/_ae-authored/intelsat-openapi-generated.yml"
+  ]
+}
