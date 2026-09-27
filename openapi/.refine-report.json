@@ -1,0 +1,20 @@
+{
+  "provider": "intelsat",
+  "sources": [
+    "_ae-authored/intelsat-openapi-generated.yml"
+  ],
+  "outputs": [
+    "intelsat-alarms-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "intelsat-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "intelsat-openapi-generated.yml: tagged paths GET /api/alarms -> Alarms",
+    "intelsat-openapi-generated.yml: declared missing tag: Alarms",
+    "apis.yml register: written (+1 apis, 2 total)"
+  ],
+  "skipped": []
+}

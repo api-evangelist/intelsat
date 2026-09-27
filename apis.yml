@@ -73,19 +73,17 @@ apis:
   humanURL: https://developer.intelsat.com/
   baseURL: null
   aid: intelsat:intelsat-api-2
-- aid: intelsat:intelsat-api
-  name: Intelsat API
-  description: 'Intelsat API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-09-22); not
-
-    the provider''s own document.'
-  humanURL: https://developer.intelsat.com
+- aid: intelsat:intelsat-alarms-api
+  name: Intelsat Alarms API
+  description: The Alarms API from Intelsat — 1 operation(s) for alarms.
+  humanURL: https://developer.intelsat.com/
+  tags:
+  - Alarms
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/intelsat-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/intelsat-alarms-api-openapi.yml
   - type: JSONSchema
     url: json-schema/intelsat-get-api-alarms-response-schema.json
-
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
