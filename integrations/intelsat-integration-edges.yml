@@ -30,6 +30,65 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-network-edge.py
   first_seen: '2026-10-20'
+- partner_name: FCC Space Station Authorizations (Part 25)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.fcc.gov/approved-space-station-list
+  category: FCC-authorised space station operator
+  contract_reference:
+    register: FCC Approved Space Station List (fcc.gov/approved-space-station-list, ssal.xlsx; IBFS/ICFS is the
+      official database)
+    standard: FCC Part 25
+    spec_file: null
+    role: fcc-space-station-licensee
+    registered_name: Intelsat License LLC
+    register_id: https://www.fcc.gov/sites/default/files/ssal.xlsx
+    matched_domain: intelsat.com
+    matched_by: domain
+    domain_source: wikidata:wikidata Q778126 'Intelsat' P856 https://www.intelsat.com/
+    authorisations:
+    - US licence
+    - US market access
+    administrations:
+    - Papua New Guinea
+    - Spain
+    - U.S.A.
+    space_stations:
+    - GALAXY 13 / HORIZONS-1
+    - GALAXY 16
+    - GALAXY 17
+    - GALAXY 18
+    - GALAXY 19
+    - GALAXY 23
+    - GALAXY 30
+    - GALAXY 31
+    - GALAXY 32
+    - GALAXY 33
+    - GALAXY 34
+    - GALAXY 36
+    - GALAXY 37
+    - GALAXY 3C
+    - Galaxy 28
+    certified_products:
+    - product: 'FCC space station authorisation: FSS'
+      service: FSS
+      lapsed: false
+    - product: 'FCC space station authorisation: RNSS'
+      service: RNSS
+      lapsed: false
+    signal_note: certified_products = one per SERVICE TYPE authorised (the licence / market-access grant is the
+      certification); satellites, call signs and orbital slots are context, never counted. The list carries current
+      authorisations only (lapsed false)
+    detected_by: sweep-space-satellite.py
+    detected: '2026-10-20'
+    identity_source: 'wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1): wikidata Q778126 ''Intelsat''
+      P856 https://www.intelsat.com/'
+  detected_by: sweep-space-satellite.py
+  first_seen: '2026-10-20'
 generated: '2026-10-20'
 method: searched
 source:
@@ -42,3 +101,6 @@ checked:
 - https://www.peeringdb.com/api/fac
 - https://www.peeringdb.com/api/ix
 - https://www.peeringdb.com/api/net
+- https://registry.opendata.aws/
+- https://stacindex.org/api/catalogs
+- https://www.fcc.gov/sites/default/files/ssal.xlsx
